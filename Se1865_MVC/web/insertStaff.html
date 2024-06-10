@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="StaffURL" method="post">
+            <table>
+                <tr>
+                    <td>staff_id</td>
+                    <td><input type="text" name="staff_id" id=""></td>
+                </tr>
+                <tr>
+                    <td>first_name</td>
+                    <td><input type="text" name="first_name" id=""></td>
+                </tr>
+                <tr>
+                    <td>last_name</td>
+                    <td><input type="text" name="last_name" id=""></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td><input type="email" name="email" id=""></td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td><input type="text" name="phone" id=""></td>
+                </tr>
+                <tr>
+                    <td>active</td>
+                    <td>
+                        <input type="radio" name="active" id="" value="1" checked>active
+                        <input type="radio" name="active" id="" value="0">Deactive
+                    </td>
+                </tr>
+                <tr>
+                    <td>store_id</td>
+                    <td>
+                        <select name="store_id" id="">
+                            <option value="1">Santa Cruz Bikes</option>
+                            <option value="2">Baldwin Bikes</option>
+                            <option value="3">Rowlett Bikes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>manager_id</td>
+                    <td>
+                        <select name="manager_id" id="">
+                            <option value="1">Fabiola</option>
+                            <option value="2">Mireya</option>
+                            <option value="5">Jannette</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="add Staff"></td>
+                    <td><input type="reset" value="reset">
+                        <input type="hidden" name="service" value="addStaff">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
