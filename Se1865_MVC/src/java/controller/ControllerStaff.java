@@ -34,6 +34,43 @@ public class ControllerStaff extends HttpServlet {
             service = "listStaff";
         }
         try (PrintWriter out = response.getWriter()) {
+            if (service.equals("deleteStaff")) {
+                int staff_id = Integer.parseInt(request.getParameter("staffID"));
+                int n=dao.removeStaff(staff_id);
+                 response.sendRedirect("URLStaff?service=listStaff");
+            }
+            if (service.equals("updateStaff")) {
+                String submit = request.getParameter("submit");
+                if (submit == null) {//display insert form
+                    int staff_id = Integer.parseInt(request.getParameter("staffID"));
+                    Vector<Staffs> vector = dao.getStaffs("select * from staffs "
+                            + " where staff_id=" + staff_id);
+                    request.setAttribute("data", vector);
+                    //model
+                    ResultSet rsStore = dao.getData("select * from Stores");
+                    ResultSet rsManage = dao.getData("SELECT m.staff_id, m.first_name, m.last_name "
+                            + " FROM dbo.staffs AS s INNER JOIN dbo.staffs AS m ON s.manager_id = m.staff_id "
+                            + " GROUP BY m.staff_id, m.first_name, m.last_name  "
+                            + " ORDER BY m.staff_id");
+                    request.setAttribute("rsStore", rsStore);
+                    request.setAttribute("rsManage", rsManage);
+                    request.getRequestDispatcher("/jsp/updateStaff.jsp").forward(request, response);
+                } else { // insert into database
+                    int staff_id = Integer.parseInt(request.getParameter("staff_id"));
+                    String first_name = request.getParameter("first_name"),
+                            last_name = request.getParameter("last_name"),
+                            email = request.getParameter("email"),
+                            phone = request.getParameter("phone");
+                    int active = Integer.parseInt(request.getParameter("active")),
+                            store_id = Integer.parseInt(request.getParameter("store_id")),
+                            manager_id = Integer.parseInt(request.getParameter("manager_id"));
+                    Staffs staff = new Staffs(staff_id, first_name, last_name, email, phone, active, store_id, manager_id);
+                    int n = dao.updateStaff(staff);
+                    // request.getRequestDispatcher("URLStaff").forward(request, response);
+                    response.sendRedirect("URLStaff?service=listStaff");
+                }
+            }
+
             if (service.equals("insertStaff")) {
                 String submit = request.getParameter("submit");
                 if (submit == null) {//display insert form
@@ -57,7 +94,7 @@ public class ControllerStaff extends HttpServlet {
                             manager_id = Integer.parseInt(request.getParameter("manager_id"));
                     Staffs staff = new Staffs(staff_id, first_name, last_name, email, phone, active, store_id, manager_id);
                     int n = dao.addStaff(staff);
-                   request.getRequestDispatcher("URLStaff").forward(request, response);
+                    request.getRequestDispatcher("URLStaff").forward(request, response);
                     //response.sendRedirect("URLStaff?service=listStaff");
                 }
             }

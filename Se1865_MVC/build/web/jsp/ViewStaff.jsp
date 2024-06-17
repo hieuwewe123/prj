@@ -51,8 +51,8 @@
                 <td><%=staff.getActive()%></td>
                 <td><%=staff.getStore_id()%></td>
                 <td><%=staff.getManager_id()%></td>
-                <td></td>
-                <td></td>
+                <td><a href="URLStaff?service=updateStaff&staffID=<%=staff.getStaff_id()%>">update</a></td>
+                <td><a href="URLStaff?service=deleteStaff&staffID=<%=staff.getStaff_id()%>">delete</a></td>
             </tr>
             <%}%>
         </table>

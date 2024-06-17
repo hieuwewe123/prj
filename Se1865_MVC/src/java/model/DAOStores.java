@@ -103,10 +103,10 @@ public class DAOStores extends DBConnect {
     public static void main(String[] args) {
         DAOStores dao = new DAOStores();
         // Example for inserting a store
-        // int n = dao.addStore(new Stores("Demo Store", "123-456-7890", "demo@store.com", "123 Main St", "Anytown", "Anystate", "12345", 1));
-        // if (n > 0) {
-        //     System.out.println("Store inserted");
-        // }
+         int n = dao.addStore(new Stores("Demo Store", "123-456-7890", "demo@store.com", "123 Main St", "Anytown", "Anystate", "12345", 4));
+         if (n > 0) {
+             System.out.println("Store inserted");
+         }
 
         // Example for updating a store
         // int n = dao.updateStore(new Stores("Updated Store", "987-654-3210", "update@store.com", "456 Main St", "Anytown", "Anystate", "54321", 1));

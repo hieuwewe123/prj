@@ -24,7 +24,7 @@
                 <input type="text" name="store_id" id="">
                 <input type="submit" name="submit" value="Search">
                 <input type="reset" value="Clear">
-                <input type="hidden" name="service" value="listStore">
+                <input type="hidden" name="service" value="searchStores">
             </p>
         </form>
         <p><a href="URLStores?service=insertStore">Insert Store</a></p>

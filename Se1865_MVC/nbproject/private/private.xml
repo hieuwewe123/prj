@@ -3,33 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOOrder_items.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/insertOrderItem.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/insertCustomer.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerStaff.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerProduct.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/insertOrder.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DBConnect.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerStores.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewProduct.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewOrderItems.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOStocks.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerOrderItems.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerOrder.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewCustomer.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewOrder.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/insertProduct.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewStaff.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/insertStaff.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOCustomers.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllersStocks.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/controller/ControllerCustomer.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/entity/Orders.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOStores.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOProducts.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewStocks.jsp</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/src/java/model/DAOOrders.java</file>
-            <file>file:/C:/Users/X/Downloads/Se1865_MVC/Se1865_MVC/web/jsp/ViewStores.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/src/java/controller/ControllerStaff.java</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/src/java/controller/ControllerOrderItems.java</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/updateStaff.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/ViewProduct.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/insertOrderItem.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/src/java/model/DAOOrder_items.java</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/src/java/model/DAOStores.java</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/src/java/controller/ControllerProduct.java</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/ViewOrderItems.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/insertProduct.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/ViewOrder.jsp</file>
+            <file>file:/D:/New%20folder%20(10)/prj/Se1865_MVC/web/jsp/ViewStaff.jsp</file>
         </group>
     </open-files>
 </project-private>
