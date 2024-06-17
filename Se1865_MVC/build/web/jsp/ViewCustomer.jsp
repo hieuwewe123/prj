@@ -19,11 +19,11 @@
 </head>
 <body>
     <form action="URLCustomer" method="get">
-        <p>Search Customer by Name:
-            <input type="text" name="customerName" id="">
+        <p>Search Customer by ID:
+            <input type="text" name="customer_id" id="">
             <input type="submit" name="submit" value="Search">
             <input type="reset" value="Clear">
-            <input type="hidden" name="service" value="listCustomer">
+            <input type="hidden" name="service" value="searchCustomer">
         </p>
     </form>
     <p><a href="URLCustomer?service=insertCustomer">Insert Customer</a></p>

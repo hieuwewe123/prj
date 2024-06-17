@@ -33,6 +33,17 @@ public class DAOCustomers extends DBConnect {
     }
     return vector;
 }
+       public int deleteCustomer(int customer_id) {
+        int result = 0;
+        String sql = "DELETE FROM customers WHERE customer_id = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setInt(1, customer_id);
+            result = ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 
     // Insert Customer
     public int addCustomer(Customers customer) {
@@ -134,16 +145,24 @@ public class DAOCustomers extends DBConnect {
 
     public static void main(String[] args) {
         DAOCustomers dao = new DAOCustomers();
-        // int n = dao.addCustomer(new Customers(1, "John", "Doe", "1234567890", "john.doe@example.com", "123 Main St", "Anytown", "Anystate", "12345"));
-        // if (n > 0) {
-        //     System.out.println("Customer inserted");
-        // }
+//         int n = dao.addCustomer(new Customers(1, "John", "Doe", "1234567890", "john.doe@example.com", "123 Main St", "Anytown", "Anystate", "12345"));
+//         if (n > 0) {
+//             System.out.println("Customer inserted");
+//         }
         
         // int n = dao.updateCustomer(new Customers(1, "Jane", "Doe", "0987654321", "jane.doe@example.com", "456 Main St", "Othertown", "Otherstate", "54321"));
         // if (n > 0) {
         //     System.out.println("Customer updated");
         // }
-        
+         // Assuming customer_id 1 exists and you want to delete it
+//    int customer_id = 1;
+//    int result = dao.deleteCustomer(customer_id);
+//    
+//    if (result > 0) {
+//        System.out.println("Customer deleted successfully.");
+//    } else {
+//        System.out.println("Failed to delete customer.");
+//    }
         dao.listAll();
     }
 }
